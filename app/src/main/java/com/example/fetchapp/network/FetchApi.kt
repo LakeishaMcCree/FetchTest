@@ -8,6 +8,7 @@ import retrofit2.http.GET
 interface FetchApi {
 
     @GET("hiring.json")
+
     fun getList():retrofit2.Call<List<FetchListItem>>
 
     companion object {
